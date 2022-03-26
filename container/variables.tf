@@ -13,3 +13,7 @@ variable "int_port" {
 variable "name_in" {
 
 }
+
+variable "count_num" {
+  
+}

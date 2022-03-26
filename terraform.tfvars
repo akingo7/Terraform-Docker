@@ -9,7 +9,7 @@ ext_ports = {
   }
 
   influxdb = {
-    dev  = [8097]
+    dev  = [8097, 8098]
     prod = [8099]
   }
 }
