@@ -13,8 +13,8 @@ resource "docker_container" "container" {
     name = "container"
     image = docker_image.nodered.name
     ports {
-        internal = 3000
-        external = 3000
+        internal = 8086
+        external = 8086
     }
   
 }
