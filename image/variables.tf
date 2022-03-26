@@ -1,0 +1,1 @@
+variable "image_name_in" {}
