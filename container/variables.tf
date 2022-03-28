@@ -17,3 +17,7 @@ variable "name_in" {
 variable "count_num" {
   
 }
+
+variable "volume_in" {
+  
+}

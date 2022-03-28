@@ -13,4 +13,5 @@ module "container" {
   ext_port = each.value.ext_port
   int_port = each.value.int_port
   count_num = length(each.value.ext_port)
+  volume_in = each.value.volume
 }

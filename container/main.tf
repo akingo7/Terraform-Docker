@@ -14,4 +14,14 @@ resource "docker_container" "container" {
     internal = var.int_port
   }
 
+  volumes {
+    container_path = var.volume_in
+    volume_name = docker_volume.volume[count.index].name
+  }
+
+}
+
+resource "docker_volume" "volume" {
+  count = var.count_num
+  name = join("-", [var.name_in, random_string.random[count.index].result, "volume"])
 }
